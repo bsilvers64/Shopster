@@ -1,14 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
-import Counter from './features/counter/Counter';
-import './App.css';
-import ProductList from './features/product-list/ProductList';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import SignUp from './features/auth/components/SignUp';
-
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CartPage from './pages/CartPage';
 
 
 const router = createBrowserRouter([
@@ -23,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage></HomePage>,
+  },
+  {
+    path: "/cart",
+    element: <CartPage></CartPage>,
   },
 ]);
 
