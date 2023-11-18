@@ -6,7 +6,7 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CartPage from './pages/CartPage';
 import CheckOut from './pages/CheckOut';
-
+import ProductDetailsPage from './pages/ProductDetailsPage';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/checkout",
     element: <CheckOut></CheckOut>,
+  },
+  {
+    path: "/product-details",
+    element: <ProductDetailsPage></ProductDetailsPage>
   },
 ]);
 
