@@ -211,13 +211,14 @@ function CheckOut() {
                   {addresses.map((address) => (
                     <li
                       key={address.email}
-                      className="flex justify-between gap-x-5 px-5 py-5 border-solid border-2 border-gray-200"
+                      className="flex justify-between gap-x-4 px-5 py-3 border-solid border-2 border-gray-200"
                     >
                       <input
                         name="payments"
                         type="radio"
-                        className="h-3 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                        className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 mt-1"
                       ></input>
+
                       <div className="min-w-0 flex-auto">
                         <p className="text-sm font-semibold leading-6 text-gray-900">
                           {address.name}
@@ -227,7 +228,7 @@ function CheckOut() {
                         </p>
                       </div>
 
-                      <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                      <div className="hidden shrink-0 border-b sm:flex sm:flex-col sm:items-end">
                         <p className="text-sm leading-6 text-gray-900">
                           {address.street}
                         </p>
@@ -235,7 +236,6 @@ function CheckOut() {
                           {address.pincode}
                         </p>
                       </div>
-                      <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end"></div>
                     </li>
                   ))}
                 </ul>
